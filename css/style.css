@@ -4,6 +4,11 @@
 	padding:0;
 	scroll-behavior: smooth;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
 p,
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -29,8 +34,72 @@ ul,ol{
 	margin: 0;
 	padding: 0;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+.container{
+    max-width: 1060px;
+    margin: 0 auto;
 }
+/*-- header-section-start --*/
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+.nav-section .nav-logo a{
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.nav-section .nav-menu .nav{
+    display: flex;
+}
+.nav-section .nav-menu .nav li{
+    margin-left: 25px;
+}
+.nav-section .nav-menu .nav li a{
+    font-weight: 600;
+    color: #204f87;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.nav-section .nav-menu .nav li a:hover{
+    color: #f2622c;
+}
+/*-- header-section-end --*/
+
+/*-- banner-section-start --*/
+.banner{
+    background-image: url(../images/lawyer_pro.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.banner h1{
+    color: #fff;
+    font-size: 82px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 250px 0;
+    margin-bottom: 50px;
+}
+.banner .arrow-down{
+    text-align: center;
+    padding-bottom: 82px;
+}
+.banner .arrow-down i{
+    font-size: 36px;
+    color: #fff;
+    animation: jumpInfinite 1.5s infinite;
+}
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+/*-- banner-section-end --*/
